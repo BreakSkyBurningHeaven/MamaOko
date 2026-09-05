@@ -151,7 +151,7 @@
     max-height:92vh;overflow-y:auto;
     overscroll-behavior:contain;
     -webkit-overflow-scrolling:touch;
-    background:var(--card);
+    background:var(--paper);
     border-radius:16px 16px 0 0;
     animation:rise .24s cubic-bezier(.2,.8,.3,1);
     padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));
@@ -160,7 +160,7 @@
   @keyframes rise{from{transform:translateY(8%)}to{transform:none}}
   .sheet-bar{
     position:sticky;top:0;z-index:3;
-    background:var(--card);
+    background:var(--paper);
     border-bottom:1px solid var(--line);
     min-height:50px;padding:0 12px;
     display:flex;align-items:center;justify-content:center;
@@ -197,16 +197,23 @@
     opacity:.6;text-transform:uppercase;letter-spacing:.06em;
   }
   .d-from small .km{font-size:.68rem;font-weight:400;text-transform:none;letter-spacing:0}
-  .d-photos{display:flex;flex-direction:column;border-top:1px solid var(--line)}
-  .d-photo{margin:0;border-bottom:1px solid var(--line)}
+  .d-photos{
+    display:flex;flex-direction:column;gap:15px;
+    padding:14px;
+    border-top:1px solid var(--line);
+  }
+  .d-photo{margin:0}
   .d-photo img{
     width:100%;height:auto;
     aspect-ratio:1/1;object-fit:cover;
     display:block;background:var(--paper-deep);
+    border-radius:12px;
+    border:1px solid var(--line);
+    box-shadow:0 3px 0 rgba(43,33,24,.16);
   }
   .d-photo figcaption{
     display:flex;align-items:baseline;gap:9px;
-    padding:8px 14px 9px;
+    padding:9px 3px 0;
     font-size:.74rem;font-weight:600;
     text-transform:uppercase;letter-spacing:.11em;color:var(--lacquer);
   }
