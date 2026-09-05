@@ -29,9 +29,6 @@
   .wrap{max-width:640px;margin:0 auto}
   .km{font-family:'Noto Sans Khmer',sans-serif;letter-spacing:0}
 
-  /* ---- Menu image ---- */
-  .menu-img{display:block;width:100%;height:auto}
-
   /* ---- Contact panel: continues the aged-paper look ---- */
   .panel{
     background:var(--paper);
@@ -65,6 +62,155 @@
     width:64px;height:3px;background:var(--lacquer);
     margin:10px 0 22px;
   }
+
+  /* ---- Hero ---- */
+  .hero{
+    background:var(--ink);
+    text-align:center;
+    padding:36px 20px 24px;
+  }
+  .hero-jp{
+    font-family:'Noto Sans JP',sans-serif;
+    font-size:.95rem;
+    font-weight:500;
+    color:#a89f92;
+    margin-bottom:6px;
+  }
+  .hero-title{
+    font-family:'Oswald',sans-serif;
+    font-weight:600;
+    font-size:2.8rem;
+    letter-spacing:.02em;
+    color:var(--paper);
+    line-height:1;
+  }
+  .hero-title span{color:var(--lacquer)}
+  .hero-sub{
+    margin-top:8px;
+    font-size:.85rem;
+    font-weight:600;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--lacquer);
+  }
+  .hero-tagline{
+    margin-top:12px;
+    font-size:.78rem;
+    color:#a89f92;
+    letter-spacing:.03em;
+  }
+  .hero-tagline .km{display:block;margin-top:3px;opacity:.9}
+
+  /* ---- Menu section ---- */
+  .menu-title-en{
+    font-size:2.1rem;
+    font-weight:600;
+    letter-spacing:.02em;
+    color:var(--lacquer);
+    text-transform:uppercase;
+    line-height:1;
+    margin-top:3px;
+  }
+  .menu-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+    margin-bottom:20px;
+  }
+  .dish-card{
+    background:#fdfbf6;
+    border:1px solid rgba(43,33,24,.14);
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 0 rgba(43,33,24,.16);
+    display:flex;
+    flex-direction:column;
+  }
+  .dish-img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    display:block;
+    background:var(--paper-deep);
+  }
+  .dish-body{
+    padding:10px 11px 12px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+  }
+  .dish-jp{
+    font-family:'Noto Sans JP',sans-serif;
+    font-size:.64rem;
+    color:var(--text);
+    opacity:.55;
+    margin-bottom:2px;
+  }
+  .dish-name{
+    font-family:'Oswald',sans-serif;
+    font-size:.84rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.01em;
+    line-height:1.15;
+    color:var(--text);
+    margin-bottom:4px;
+    min-height:2.3em;
+  }
+  .dish-desc{
+    font-size:.68rem;
+    line-height:1.35;
+    color:var(--text);
+    opacity:.62;
+    margin-bottom:10px;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .dish-prices{
+    margin-top:auto;
+    border-top:1px dashed rgba(43,33,24,.22);
+    padding-top:8px;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .price-row{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    font-size:.72rem;
+  }
+  .price-row .size{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:17px;height:17px;
+    flex:0 0 auto;
+    border-radius:50%;
+    background:var(--lacquer);
+    color:#fff;
+    font-size:.58rem;
+    font-weight:600;
+  }
+  .price-row .price{
+    font-weight:600;
+    color:var(--text);
+    margin-left:auto;
+  }
+  .also-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:.85rem;
+    font-weight:500;
+    padding:2px 2px 24px;
+    border-bottom:1px solid rgba(43,33,24,.18);
+    margin-bottom:24px;
+  }
+  .also-row .km{font-size:.75rem;opacity:.7;display:block;font-weight:400}
+  .also-row .also-price{font-weight:600}
 
   /* ---- Buttons ---- */
   .btn{
@@ -159,11 +305,86 @@
 <body>
 <div class="wrap">
 
-  <!-- MENU -->
-  <img class="menu-img" src="menu.jpg" alt="Mama Oko menu — Okonomiyaki Beef, Special Okonomiyaki Beef, Okonomiyaki Seafood, Special Okonomiyaki Seafood (Small $3.00, Medium $4.50, Large $6.00) and Salad (Big $1.50)">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-jp">お好み焼き</div>
+    <div class="hero-title">MAMA <span>OKO</span></div>
+    <div class="hero-sub">Okonomiyaki Shop</div>
+    <div class="hero-tagline">Japanese food made for Khmer ♥<span class="km">អាហារជប៉ុន សម្រាប់ជនជាតិខ្មែរ</span></div>
+  </div>
 
-  <!-- CONTACT -->
   <div class="panel">
+
+    <!-- MENU -->
+    <div class="jp">お品書き</div>
+    <div class="menu-title-en">Menu</div>
+    <div class="km-label km">ម៉ឺនុយ</div>
+    <div class="stroke"></div>
+
+    <div class="menu-grid">
+      <article class="dish-card">
+        <img class="dish-img" src="dish-beef.jpg" alt="Okonomiyaki Beef">
+        <div class="dish-body">
+          <div class="dish-jp">お好み焼き</div>
+          <h3 class="dish-name">Okonomiyaki Beef</h3>
+          <p class="dish-desc">Savory Japanese pancake grilled fresh with beef.</p>
+          <div class="dish-prices">
+            <div class="price-row"><span class="size">S</span><span>Small</span><span class="price">$3.00</span></div>
+            <div class="price-row"><span class="size">M</span><span>Medium</span><span class="price">$4.50</span></div>
+            <div class="price-row"><span class="size">L</span><span>Large</span><span class="price">$6.00</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <img class="dish-img" src="dish-beef-special.jpg" alt="Special Okonomiyaki Beef">
+        <div class="dish-body">
+          <div class="dish-jp">特製お好み焼き</div>
+          <h3 class="dish-name">Special Okonomiyaki Beef</h3>
+          <p class="dish-desc">Loaded beef okonomiyaki with extra toppings.</p>
+          <div class="dish-prices">
+            <div class="price-row"><span class="size">S</span><span>Small</span><span class="price">$3.00</span></div>
+            <div class="price-row"><span class="size">M</span><span>Medium</span><span class="price">$4.50</span></div>
+            <div class="price-row"><span class="size">L</span><span>Large</span><span class="price">$6.00</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <img class="dish-img" src="dish-seafood.jpg" alt="Okonomiyaki Seafood">
+        <div class="dish-body">
+          <div class="dish-jp">お好み焼き シーフード</div>
+          <h3 class="dish-name">Okonomiyaki Seafood</h3>
+          <p class="dish-desc">Savory seafood okonomiyaki, grilled fresh to order.</p>
+          <div class="dish-prices">
+            <div class="price-row"><span class="size">S</span><span>Small</span><span class="price">$3.00</span></div>
+            <div class="price-row"><span class="size">M</span><span>Medium</span><span class="price">$4.50</span></div>
+            <div class="price-row"><span class="size">L</span><span>Large</span><span class="price">$6.00</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card">
+        <img class="dish-img" src="dish-seafood-special.jpg" alt="Special Okonomiyaki Seafood">
+        <div class="dish-body">
+          <div class="dish-jp">特製お好み焼き シーフード</div>
+          <h3 class="dish-name">Special Okonomiyaki Seafood</h3>
+          <p class="dish-desc">Loaded seafood okonomiyaki with extra toppings.</p>
+          <div class="dish-prices">
+            <div class="price-row"><span class="size">S</span><span>Small</span><span class="price">$3.00</span></div>
+            <div class="price-row"><span class="size">M</span><span>Medium</span><span class="price">$4.50</span></div>
+            <div class="price-row"><span class="size">L</span><span>Large</span><span class="price">$6.00</span></div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="also-row">
+      <span>+ Salad<span class="km">សាឡាត់</span></span>
+      <span class="also-price">Big — $1.50</span>
+    </div>
+
+    <!-- CONTACT -->
     <div class="jp">お問い合わせ</div>
     <div class="en">Contact &amp; Orders</div>
     <div class="km-label km">ទំនាក់ទំនង &amp; កម្ម៉ង់</div>
