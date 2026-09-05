@@ -13,7 +13,7 @@ Four main dishes:
 
 | Dish | Flavors | Sizes & prices |
 |---|---|---|
-| Steam-Fry Japanese Noodle | one | One size — $3.00 |
+| Steam-Fry Japanese Noodle | beef, seafood | One size — $3.00 |
 | Mama Oko Special | beef, seafood | S $3.00 · M $4.50 · L $6.00 |
 | Mama Oko Okonomiyaki | beef, seafood | S $3.50 · M $5.00 · L $6.50 |
 | Mama Oko Salad | one | Big — $1.50 |
