@@ -19,6 +19,7 @@
     --lacquer-dark:#7e1717;
     --tg:#2aabee;
     --grab:#00b14f;
+    --panda:#d70f64;
     --text:#2b2118;
     --line:rgba(43,33,24,.14);
   }
@@ -252,6 +253,12 @@
     box-shadow:0 2px 0 rgba(0,177,79,.28);
   }
   .d-order--grab img{height:23px;width:auto;flex:0 0 auto;display:block}
+  .d-order--panda{
+    background:var(--card);color:var(--text);
+    border:1px solid rgba(215,15,100,.45);
+    box-shadow:0 2px 0 rgba(215,15,100,.28);
+  }
+  .d-order--panda img{height:23px;width:auto;flex:0 0 auto;display:block}
   .d-order svg{width:20px;height:20px;fill:currentColor;flex:0 0 auto}
   .d-order .km{
     display:block;font-size:.74rem;font-weight:400;
@@ -296,6 +303,16 @@
   .btn-grab svg{fill:var(--grab)}
   .btn-grab .grab-logo{
     flex:0 0 auto;height:25px;width:auto;
+    margin-left:auto;display:block;
+  }
+  .btn-panda{
+    background:var(--card);color:var(--text);
+    border:1px solid rgba(215,15,100,.45);
+    box-shadow:0 3px 0 rgba(215,15,100,.32);
+  }
+  .btn-panda svg{fill:var(--panda)}
+  .btn-panda .panda-logo{
+    flex:0 0 auto;height:28px;width:auto;
     margin-left:auto;display:block;
   }
 
@@ -426,6 +443,12 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6h-2a4 4 0 0 0-8 0H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-6-2a2 2 0 0 1 2 2h-4a2 2 0 0 1 2-2Zm6 16H6V8h12v12Z"/></svg>
       <span>Order on Grab<small>Delivered to your door</small><small class="km-sub km">ដឹកជញ្ជូនដល់ផ្ទះអ្នក</small></span>
       <img class="grab-logo" src="images/brand/grab-logo.png" alt="Grab">
+    </a>
+
+    <a class="btn btn-panda" href="https://foodpanda.go.link/dHe7S" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6h-2a4 4 0 0 0-8 0H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-6-2a2 2 0 0 1 2 2h-4a2 2 0 0 1 2-2Zm6 16H6V8h12v12Z"/></svg>
+      <span>Order on foodpanda<small>Delivered to your door</small><small class="km-sub km">ដឹកជញ្ជូនដល់ផ្ទះអ្នក</small></span>
+      <img class="panda-logo" src="images/brand/foodpanda-logo.png" alt="foodpanda">
     </a>
 
     <!-- CONTACT -->
@@ -612,6 +635,10 @@
       '<a class="d-order d-order--grab" href="https://r.grab.com/g/6-20260905_154015_B2C58196344E47A0B177209A26C14EAA_MEXMPS-10-C76DCLAFV6BFMA" target="_blank" rel="noopener">' +
         '<img src="images/brand/grab-logo.png" alt="Grab">' +
         '<span>Order on Grab<span class="km">កម្ម៉ង់តាម Grab</span></span>' +
+      '</a>' +
+      '<a class="d-order d-order--panda" href="https://foodpanda.go.link/dHe7S" target="_blank" rel="noopener">' +
+        '<img src="images/brand/foodpanda-logo.png" alt="foodpanda">' +
+        '<span>Order on foodpanda<span class="km">កម្ម៉ង់តាម foodpanda</span></span>' +
       '</a>' +
       '<a class="d-order" href="https://t.me/Sokhan_7">' +
         '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.94 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.64 6.56c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.21-1.6.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.13-.05-.18s-.15-.03-.21-.02c-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27 0 .06.02.24.01.39Z"/></svg>' +
